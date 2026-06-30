@@ -38,11 +38,11 @@ const TRIP = {
       date:"Thứ 6, 10 tháng 7 năm 2026",
       img:"https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=800&q=75",
       items:[
-        { time:"06:00", emoji:"🚌", name:"Xuất phát từ Bắc Kạn",          desc:"~250km qua cao tốc Hà Nội – Hải Phòng. Dự kiến đến nơi sau 6 tiếng.", tag:"travel", highlight:false },
-        { time:"12:00", emoji:"🦀", name:"Ăn trưa – Bánh đa cua bề bề",   desc:"Ngõ 195 Cầu Đất, Ngô Quyền – quán bà Thuỷ gần 40 năm tuổi, được Sở Du lịch HP công nhận. Nước dùng cua bể Đồ Sơn đậm đà, ~40k/bát.", tag:"food", highlight:true },
+        { time:"06:00", emoji:"🚌", name:"Xuất phát từ Bắc Kạn",          desc:"~270km qua cao tốc Hà Nội – Hải Phòng. Đi thong thả có ghé trạm dừng nghỉ, dự kiến đến nơi sau 5 tiếng.", tag:"travel", highlight:false },
+        { time:"12:00", emoji:"🦀", name:"Ăn trưa – Bánh đa cua bề bề",   desc:"Ngõ 195 Cầu Đất, Ngô Quyền – quán bà Thuỷ gần 40 năm tuổi, được Sở Du lịch HP công nhận. Nước dùng cua bể Đồ Sơn đậm đà", tag:"food", highlight:true },
         { time:"14:00", emoji:"🏠", name:"Nhận phòng Villa Vũ Yên",        desc:"Check-in Villa VinWonder Vũ Yên. Nghỉ trưa 1–1.5 tiếng cho cả đoàn nạp lại sức.", tag:"rest", highlight:false },
-        { time:"16:00", emoji:"🌊", name:"Tắm biển Đồi Rồng",             desc:"Khu du lịch quốc tế Đồi Rồng, Đồ Sơn. Tắm từ 16h tránh nắng. Có phao và ghế thuê. Không chơi công viên nước tại đây.", tag:"activity", highlight:true },
-        { time:"19:00", emoji:"🦞", name:"Ăn tối – Hải sản Biển Rồng",    desc:"Nhà hàng Hải sản Biển Rồng – nội khu Đồi Rồng. Đặt bàn trước cho 12 người.", tag:"food", highlight:true },
+        { time:"16:00", emoji:"🌊", name:"Tắm biển Đồi Rồng",             desc:"Khu du lịch quốc tế Đồi Rồng, Đồ Sơn. Tắm từ 16h tránh nắng. Có phao và ghế thuê.", tag:"activity", highlight:true },
+        { time:"19:00", emoji:"🦞", name:"Ăn tối – Hải sản Biển Rồng",    desc:"Nhà hàng Hải sản Biển Rồng – nội khu Đồi Rồng Hoặc nhà hàng hải sản Tăng Hậu nổi tiếng ở Đồ Sơn", tag:"food", highlight:true },
         { time:"21:00", emoji:"🌙", name:"Về villa nghỉ ngơi",             desc:"Di chuyển về đảo Vũ Yên, nghỉ sớm để có sức cho ngày VinWonders hôm sau.", tag:"rest", highlight:false },
       ],
     },
@@ -93,7 +93,7 @@ const TRIP = {
       desc: "Vườn thú bán hoang dã lớn nhất miền Bắc với hơn 2.000 cá thể thuộc 67 loài. Tê giác, hổ Bengal, hươu cao cổ, flamingo – thiên đường khám phá cho cả gia đình.",
     },
     {
-      img:  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iNjQiIHZpZXdCb3g9IjAgMCA4MCA2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8ZGVmcz4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ic2t5IiB4MT0iMCUiIHkxPSIwJSIgeDI9IjAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM0REI4RTgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMWE4ZmQxIi8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJ3YXRlciIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiMwMGI0ZDgiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdHlsZT0ic3RvcC1jb2xvcjojMDA3N2I2Ii8+CiAgICA8L2xpbmVhckdyYWRpZW50PgogIDwvZGVmcz4KICA8IS0tIEJhY2tncm91bmQgc2t5IC0tPgogIDxyZWN0IHdpZHRoPSI4MCIgaGVpZ2h0PSI2NCIgZmlsbD0idXJsKCNza3kpIi8+CiAgPCEtLSBTdW4gLS0+CiAgPGNpcmNsZSBjeD0iNjUiIGN5PSIxMiIgcj0iNyIgZmlsbD0iI0ZGRDE2NiIgb3BhY2l0eT0iMC45Ii8+CiAgPCEtLSBXYXRlciBzbGlkZSB0b3dlciAtLT4KICA8cmVjdCB4PSI4IiB5PSI0IiB3aWR0aD0iOCIgaGVpZ2h0PSI0MCIgZmlsbD0iI0ZGNkI2QiIgcng9IjEiLz4KICA8IS0tIFNsaWRlIGN1cnZlcyAtLT4KICA8cGF0aCBkPSJNMTYgOCBRMzUgMTIgMzAgMjggUTI1IDQwIDQ1IDQ0IiBzdHJva2U9IiNGRjlGNDMiIHN0cm9rZS13aWR0aD0iNSIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CiAgPHBhdGggZD0iTTE2IDE2IFE0MCAyMCAzOCAzNiBRMzYgNDggNTggNTAiIHN0cm9rZT0iIzU0QTBGRiIgc3Ryb2tlLXdpZHRoPSI1IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KICA8IS0tIFBvb2wgd2F0ZXIgYXQgYm90dG9tIC0tPgogIDxlbGxpcHNlIGN4PSI0MCIgY3k9IjU4IiByeD0iMzYiIHJ5PSI2IiBmaWxsPSJ1cmwoI3dhdGVyKSIgb3BhY2l0eT0iMC44NSIvPgogIDwhLS0gV2F2ZSBsaW5lcyAtLT4KICA8cGF0aCBkPSJNMTQgNTcgUTIwIDU0IDI2IDU3IFEzMiA2MCAzOCA1NyBRNDQgNTQgNTAgNTcgUTU2IDYwIDYyIDU3IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuMiIgZmlsbD0ibm9uZSIgb3BhY2l0eT0iMC42Ii8+CiAgPCEtLSBUaW55IHBlcnNvbiBvbiBzbGlkZSAtLT4KICA8Y2lyY2xlIGN4PSIyOCIgY3k9IjI2IiByPSIyLjUiIGZpbGw9IiNGRkVBQTciLz4KICA8cGF0aCBkPSJNMjggMjguNSBMMjYgMzMgTDMwIDMzIiBzdHJva2U9IiM2QzVDRTciIHN0cm9rZS13aWR0aD0iMS41IiBmaWxsPSJub25lIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9zdmc+",
+      img:  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmrsoPajHiWKDUvDhyadRGnusxTdlPAC_b6Kp8RJnw_9NcaXjCW4_WrNu2&s=10",
       name: "Công viên nước Aloha",
       sub:  "VinWonders · Đảo Vũ Yên",
       desc: "10 tổ hợp trò chơi nước và 7 đường trượt siêu tốc lên đến 40m. Không gian Hawaii rực rỡ sắc màu – nơi trẻ em và người lớn cùng vui không biết mệt.",
@@ -102,7 +102,7 @@ const TRIP = {
       img:  "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=300&q=75",
       name: "Bánh Đa Cua Bể Bà Thuỷ",
       sub:  "195 Cầu Đất · Ngô Quyền",
-      desc: "Quán trứ danh gần 40 năm, được Sở Du lịch HP đưa vào Bản đồ Ẩm thực. Nước dùng cua bể Đồ Sơn đậm đà, ~40k/bát.",
+      desc: "Quán trứ danh gần 40 năm, được Sở Du lịch HP đưa vào Bản đồ Ẩm thực. Nước dùng cua bể Đồ Sơn đậm đà.",
     },
     {
       img:  "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=300&q=75",
