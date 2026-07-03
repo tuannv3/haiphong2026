@@ -39,7 +39,7 @@ const TRIP = {
       img:"https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=800&q=75",
       items:[
         { time:"06:00", emoji:"🚌", name:"Xuất phát từ Bắc Kạn", desc:"~270km qua cao tốc Hà Nội – Hải Phòng. Đi thong thả có ghé trạm dừng nghỉ, dự kiến đến nơi sau 5 tiếng.", tag:"travel", highlight:false },
-        { time:"12:00", emoji:"🦀", name:"Ăn trưa – Bánh đa cua bề bề", desc:"Ngõ 179 Cầu Đất, Ngô Quyền – Bánh đa cua Bà Cụ là một trong những quán bánh đa cua đầu tiên ở Hải Phòng, tồn tại hơn 50 năm qua. Không chỉ thu hút người dân địa phương, quán còn là điểm đến yêu thích của những tín đồ du lịch đam mê ẩm thực.", tag:"food", highlight:true },
+        { time:"12:00", emoji:"🦀", name:"Ăn trưa – Đặc sản Lẩu cua đồng", desc:"Lẩu Cua Đồng Minh Quỳnh địa chỉ 188 Văn Cao là quán ăn có tuổi đời gần 20 năm, đây là quán lẩu cua đồng lâu đời và chuẩn vị nhất tại Hải Phòng.", tag:"food", highlight:true },
         { time:"14:00", emoji:"🏠", name:"Nhận phòng Villa Vũ Yên", desc:"Check-in Villa VinWonder Vũ Yên. Nghỉ trưa 1–1.5 tiếng cho cả đoàn nạp lại sức.", tag:"rest", highlight:false },
         { time:"16:00", emoji:"🌊", name:"Tắm biển Đồi Rồng", desc:"Khu du lịch quốc tế Đồi Rồng, Đồ Sơn. Tắm từ 16h tránh nắng. Có phao và ghế thuê.", tag:"activity", highlight:true },
         { time:"19:00", emoji:"🦞", name:"Ăn tối – Hải sản Biển Rồng", desc:"Nhà hàng Hải sản Biển Rồng – nội khu Đồi Rồng Hoặc nhà hàng hải sản Tăng Hậu nổi tiếng ở Đồ Sơn", tag:"food", highlight:false },
@@ -64,15 +64,16 @@ const TRIP = {
     },
     {
       id:"ngay3", num:"03", navLabel:"Chủ Nhật",
-      label:"Ngày ba", title:"Sáng tự do\n& Buffet chia tay",
+      label:"Ngày ba", title:"Sáng tự do\n& Food tour chia tay",
       date:"Chủ nhật, 12 tháng 7 năm 2026",
       img:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=75",
       items:[
         { time:"09:00", emoji:"🏊", name:"Tự do tại Villa",               desc:"Ăn sáng, bơi hồ bơi, nghỉ ngơi, tận hưởng không gian đảo lần cuối. Không check-out sớm.", tag:"rest", highlight:false },
-        { time:"11:00", emoji:"🧳", name:"Check-out",                     desc:"Trả phòng, sắp xếp hành lý, di chuyển vào trung tâm Hải Phòng (~30 phút).", tag:"travel", highlight:false },
-        { time:"11:30", emoji:"🦐", name:"Ăn trưa – Buffet HP3",          desc:"97 Bạch Đằng, Hồng Bàng. Buffet hải sản tươi sống không giới hạn. Đặt bàn: ☎ 0225 3668 166.", tag:"food", highlight:true },
-        { time:"13:30", emoji:"🛍️", name:"Mua đặc sản mang về",           desc:"Bánh mì cay Khánh Nạp (172 Hàng Kênh), chả cá, tôm chua Hải Phòng.", tag:"activity", highlight:false },
-        { time:"14:00", emoji:"🚌", name:"Lên đường về Bắc Kạn",          desc:"~250km, dự kiến về Bắc Kạn lúc 20h. Tạm biệt Hải Phòng – hẹn gặp lại! 👋", tag:"travel", highlight:true },
+        { time:"11:30", emoji:"🧳", name:"Check-out",                     desc:"Trả phòng, sắp xếp hành lý, di chuyển vào trung tâm Hải Phòng (~30 phút).", tag:"travel", highlight:false },
+        { time:"12:00", emoji:"🦐", name:"Bắt đầu Food tour - Bánh đa bề bề, nem cua bể",   desc:"Bánh đa cua Bà Cụ  - Ngõ 179 Cầu Đất, Ngô Quyền là một trong những quán bánh đa cua đầu tiên ở Hải Phòng, tồn tại hơn 50 năm qua. Không chỉ thu hút người dân địa phương, quán còn là điểm đến yêu thích của những tín đồ du lịch đam mê ẩm thực. Tại đây còn có món nem cua bể được gói vuông, rán giòn rụm. Lớp vỏ đẫm nhân thịt cua tươi, ăn kèm dưa góp và nước chấm chua ngọt.", tag:"food", highlight:true },
+        { time:"13:00", emoji:"🛍️", name:"Bánh mỳ cay Ông Già/ông Cuông",  desc:"Bánh mì cay Ông Già - 181 Hàng Kênh là thương hiệu có tuổi đời hơn 40 năm. Pate tại đây có tỉ lệ mỡ và gan hoàn hảo, cực kỳ béo ngậy, thơm mềm. Hoặc đối diện với quán ông Già là bánh mỳ cay Ông Cuông (184 Hàng Kênh) nổi tiếng với phần cốt bánh mì giòn xốp và lớp nhân pate mịn màng, đậm vị.", tag:"activity", highlight:false },
+         { time:"13:30", emoji:"🛍️", name:"Dừa dầm trứ danh",  desc:"Dừa dầm Cô Hạnh (130 Lam Sơn) nổi tiếng với món dừa dầm đẫm topping dừa non, thạch rau câu và cà phê cốt dừa đá tuyết béo ngậy.", tag:"activity", highlight:true },
+        { time:"14:00", emoji:"🚌", name:"Lên đường về Bắc Kạn",          desc:"~270km, dự kiến về Bắc Kạn lúc 20h. Tạm biệt Hải Phòng – hẹn gặp lại! 👋", tag:"travel", highlight:true },
       ],
     },
   ],
@@ -112,9 +113,9 @@ const TRIP = {
     },
     {
       img:  "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=300&q=75",
-      name: "Buffet Hải Sản HP3",
-      sub:  "97 Bạch Đằng · Hải Phòng",
-      desc: "Buffet hải sản tươi sống không giới hạn tại trung tâm thành phố Cảng. Bữa ăn chốt hạ xứng đáng trước hành trình về. ☎ 0225 3668 166.",
+      name: "Food tour Hải Phòng",
+      sub:  "Trung tâm Tp Hải Phòng",
+      desc: "Food Tour Hải Phòng là hành trình các tín đồ du lịch bị mê hoặc bởi những món ăn đậm đà vị biển như bánh đa cua, ốc, dừa dầm và trải nghiệm đóng thùng xốp bánh mì cay mang về làm quà.",
     },
     {
       img:  "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=300&q=75",
