@@ -39,10 +39,14 @@ const TRIP = {
       img:"https://images.unsplash.com/photo-1506953823976-52e1fdc0149a?w=800&q=75",
       items:[
         { time:"06:00", emoji:"🚌", name:"Xuất phát từ Bắc Kạn", desc:"~270km qua cao tốc Hà Nội – Hải Phòng. Đi thong thả có ghé trạm dừng nghỉ, dự kiến đến nơi sau 5 tiếng.", tag:"travel", highlight:false },
-        { time:"12:00", emoji:"🦀", name:"Ăn trưa – Đặc sản Lẩu cua đồng", desc:"Lẩu Cua Đồng Minh Quỳnh địa chỉ 188 Văn Cao là quán ăn có tuổi đời gần 20 năm, đây là quán lẩu cua đồng lâu đời và chuẩn vị nhất tại Hải Phòng.", tag:"food", highlight:true },
-        { time:"14:00", emoji:"🏠", name:"Nhận phòng Villa Vũ Yên", desc:"Check-in Villa VinWonder Vũ Yên. Nghỉ trưa 1–1.5 tiếng cho cả đoàn nạp lại sức.", tag:"rest", highlight:false },
-        { time:"16:00", emoji:"🌊", name:"Tắm biển Đồi Rồng", desc:"Khu du lịch quốc tế Đồi Rồng, Đồ Sơn. Tắm từ 16h tránh nắng. Có phao và ghế thuê.", tag:"activity", highlight:true },
-        { time:"19:00", emoji:"🦞", name:"Ăn tối – Hải sản Biển Rồng", desc:"Nhà hàng Hải sản Biển Rồng – nội khu Đồi Rồng Hoặc nhà hàng hải sản Tăng Hậu nổi tiếng ở Đồ Sơn", tag:"food", highlight:false },
+        { time:"12:00", emoji:"🦀", name:"Ăn trưa – Đặc sản Lẩu cua đồng", desc:"Lẩu Cua Đồng Minh Quỳnh địa chỉ 188 Văn Cao là quán ăn có tuổi đời gần 20 năm, đây là quán lẩu cua đồng lâu đời và chuẩn vị nhất tại Hải Phòng.", tag:"food", highlight:true,
+          mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.396988083542!2d106.66548537576904!3d20.865538980671193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7b1b43b8da0b%3A0xf4c13ef5a9dc8c1b!2zTOG6qXUgQ3VhIMSQb25nIE1pbmggUXXhu7FuaA!5e0!3m2!1svi!2svn!4v1719500001000" },
+        { time:"14:00", emoji:"🏠", name:"Nhận phòng Villa Vũ Yên", desc:"Check-in Villa VinWonder Vũ Yên. Nghỉ trưa 1–1.5 tiếng cho cả đoàn nạp lại sức.", tag:"rest", highlight:false,
+          mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.751234567890!2d106.74900000000001!3d20.871000000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7b3bb76ae681%3A0x413a7596f4d9951e!2zVmluaG9tZXMgUm95YWwgSXNsYW5k!5e0!3m2!1svi!2svn!4v1719500002000" },
+        { time:"16:00", emoji:"🌊", name:"Tắm biển Đồi Rồng", desc:"Khu du lịch quốc tế Đồi Rồng, Đồ Sơn. Tắm từ 16h tránh nắng. Có phao và ghế thuê.", tag:"activity", highlight:true,
+          mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.5!2d106.77800000000001!3d20.699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a6e0bb74e6b57%3A0xc1b8e5b4f2a9d3e0!2zS2h1IER1IGzhu4tjaCBRdWXhu5FjIFThuqtlIMSQb2kgUuG7k25n!5e0!3m2!1svi!2svn!4v1719500003000" },
+        { time:"19:00", emoji:"🦞", name:"Ăn tối – Hải sản Biển Rồng", desc:"Nhà hàng Hải sản Biển Rồng – nội khu Đồi Rồng Hoặc nhà hàng hải sản Tăng Hậu nổi tiếng ở Đồ Sơn", tag:"food", highlight:false,
+          mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3726.8!2d106.7920!3d20.697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a6e150b8f9a1f%3A0x9b2c4d7e3f8a1b0c!2zTmjDoCBow6BuZyBUxINuZyBI4bqtdQ!5e0!3m2!1svi!2svn!4v1719500004000" },
         { time:"21:00", emoji:"🌙", name:"Về villa nghỉ ngơi", desc:"Di chuyển về đảo Vũ Yên, nghỉ sớm để có sức cho ngày VinWonders hôm sau.", tag:"rest", highlight:true },
       ],
     },
@@ -50,16 +54,19 @@ const TRIP = {
       id:"ngay2", num:"02", navLabel:"Thứ Bảy",
       label:"Ngày hai", title:"VinWonders cả ngày\n& Pháo hoa đêm",
       date:"Thứ 7, 11 tháng 7 năm 2026",
-      // Pexels - aerial island green: không bị CORS
       img:"https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?auto=compress&cs=tinysrgb&w=800",
       items:[
         { time:"08:00", emoji:"🍽️", name:"Ăn sáng tại Villa", desc:"Cả nhà sẽ ăn sáng nhẹ mỳ tôm thịt/trứng tự nấu tại Villa.", tag:"food", highlight:false },
-        { time:"09:00", emoji:"🦁", name:"Safari Vũ Yên + Khu vui chơi", desc:"Vào sớm lúc 9:00 khi trời còn mát để thăm vườn thú: Tê giác, hổ Bengal, hươu cao cổ, flamingo, nhà chim – trẻ con nhìn thấy thú thực tế cực thích. Sau đó di chuyển sang khu Vùng đất Chiến binh để trải nghiệm các trò chơi Cảm giác mạnh như Tàu lượn giật ngược (Switchback Coaster 460) độc đáo đầu tiên tại Đông Nam Á, thách thức bản thân với Quái thú trỗi dậy và Cung đường báo đốm. Rồi đến khu Thế giới Thần tiên dành cho các trẻ nhỏ với Vườn Cổ tích và 13 trò chơi ngoài trời vui nhộn như Vũ hội thần tiên, Đu quay thảm thần, Vòng quay ma thuật và phân khu trong nhà rộng lớn với hơn 150 máy game hiện đại mang đến không gian vui chơi bất tận cho bé.", tag:"activity", highlight:true },
-        { time:"13:00", emoji:"🍽️", name:"Ăn trưa – Buffet nhà hàng Crown",     desc:"Buffet trưa trong khuôn viên VinWonders có 2 suất (11h–12h30 hoặc 13h–14h30). Đoàn sẽ ăn suất 13h để tránh giờ cao điểm và sau khi chơi hết Khu trò chơi sẽ đói và ăn ngon hơn.", tag:"food", highlight:false },
-        { time:"15:00", emoji:"🎢", name:"Công viên nước Aloha",     desc:"Công viên nước hiện đại rộng 2,9 ha mang đậm phong cách Hawaii với tháp trượt khổng lồ cao 40m. Nơi đây sở hữu các trò chơi cảm giác mạnh cực đỉnh như Cơn lốc sắc màu (Twister) và Tia chớp nhiệt đới. Cả gia đình còn được thư giãn thả ga cùng khu vực Hồ tạo sóng, Sông lười, Sóng thần Hawaii và Vũ điệu thần mưa.", tag:"activity", highlight:true },
-        { time:"18:00", emoji:"🛒", name:"Mua nguyên liệu BBQ+Bia - Vincom Mega Mall Royal Island",  desc:"Ghé WinMart ở Vincom Mega Mall Royal Island trong khu đảo: tôm, mực, ngao, thịt, ngô, khoai, rau, bia.", tag:"activity", highlight:false },
-        { time:"19:00", emoji:"🔥", name:"BBQ tại Villa",   desc:"Nướng hải sản và thịt ngay tại villa – thoải mái, trẻ con vui, không phải di chuyển sau ngày dài.", tag:"food", highlight:true },
-        { time:"20:00", emoji:"🎆", name:"Xem Nhạc nước và Pháo hoa – Royal Square",  desc:"Đi bộ ~10–15 phút ra Quảng trường Royal Square. 20:00: Xem trình diễn Nhạc nước nghệ thuật. 20:30: Chiêm ngưỡng màn trình diễn Pháo hoa.", tag:"special", highlight:false },
+        { time:"09:00", emoji:"🦁", name:"Safari Vũ Yên + Khu vui chơi", desc:"Vào sớm lúc 9:00 khi trời còn mát để thăm vườn thú: Tê giác, hổ Bengal, hươu cao cổ, flamingo, nhà chim – trẻ con nhìn thấy thú thực tế cực thích. Sau đó di chuyển sang khu Vùng đất Chiến binh để trải nghiệm các trò chơi Cảm giác mạnh như Tàu lượn giật ngược (Switchback Coaster 460) độc đáo đầu tiên tại Đông Nam Á, thách thức bản thân với Quái thú trỗi dậy và Cung đường báo đốm. Rồi đến khu Thế giới Thần tiên dành cho các trẻ nhỏ với Vườn Cổ tích và 13 trò chơi ngoài trời vui nhộn như Vũ hội thần tiên, Đu quay thảm thần, Vòng quay ma thuật và phân khu trong nhà rộng lớn với hơn 150 máy game hiện đại mang đến không gian vui chơi bất tận cho bé.", tag:"activity", highlight:true,
+          mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.8!2d106.74830000000001!3d20.8693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7b395647d50b%3A0xd3e2f1a4c8b97062!2zVmluV29uZGVycyBWxakgWcOqbg!5e0!3m2!1svi!2svn!4v1719500005000" },
+        { time:"13:00", emoji:"🍽️", name:"Ăn trưa – Buffet nhà hàng Crown", desc:"Buffet trưa trong khuôn viên VinWonders có 2 suất (11h–12h30 hoặc 13h–14h30). Đoàn sẽ ăn suất 13h để tránh giờ cao điểm và sau khi chơi hết Khu trò chơi sẽ đói và ăn ngon hơn.", tag:"food", highlight:false },
+        { time:"15:00", emoji:"🎢", name:"Công viên nước Aloha", desc:"Công viên nước hiện đại rộng 2,9 ha mang đậm phong cách Hawaii với tháp trượt khổng lồ cao 40m. Nơi đây sở hữu các trò chơi cảm giác mạnh cực đỉnh như Cơn lốc sắc màu (Twister) và Tia chớp nhiệt đới. Cả gia đình còn được thư giãn thả ga cùng khu vực Hồ tạo sóng, Sông lười, Sóng thần Hawaii và Vũ điệu thần mưa.", tag:"activity", highlight:true,
+          mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.9!2d106.74750000000001!3d20.8685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7b395647d50b%3A0xd3e2f1a4c8b97062!2zUXXhu5FjIMSR4bqjbyBBbG9oYSAtIFZpbldvbmRlcnMgVsWpIFnDqm4!5e0!3m2!1svi!2svn!4v1719500006000" },
+        { time:"18:00", emoji:"🛒", name:"Mua nguyên liệu BBQ+Bia - Vincom Mega Mall Royal Island", desc:"Ghé WinMart ở Vincom Mega Mall Royal Island trong khu đảo: tôm, mực, ngao, thịt, ngô, khoai, rau, bia.", tag:"activity", highlight:false,
+          mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.7!2d106.74600000000001!3d20.8700!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7b3800fa1001%3A0xaabbccdd11223344!2zVmluY29tIE1lZ2EgTWFsbCBSb3lhbCBJc2xhbmQ!5e0!3m2!1svi!2svn!4v1719500007000" },
+        { time:"19:00", emoji:"🔥", name:"BBQ tại Villa", desc:"Nướng hải sản và thịt ngay tại villa – thoải mái, trẻ con vui, không phải di chuyển sau ngày dài.", tag:"food", highlight:true },
+        { time:"20:00", emoji:"🎆", name:"Xem Nhạc nước và Pháo hoa – Royal Square", desc:"Đi bộ ~10–15 phút ra Quảng trường Royal Square. 20:00: Xem trình diễn Nhạc nước nghệ thuật. 20:30: Chiêm ngưỡng màn trình diễn Pháo hoa.", tag:"special", highlight:false,
+          mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.6!2d106.74700000000001!3d20.8705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7b3700fa2002%3A0xbbccdd2233445566!2zUXXhuqNuZyB0cuG6o25nIFJveWFsIFNxdWFyZQ!5e0!3m2!1svi!2svn!4v1719500008000" },
       ],
     },
     {
@@ -68,12 +75,15 @@ const TRIP = {
       date:"Chủ nhật, 12 tháng 7 năm 2026",
       img:"https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=75",
       items:[
-        { time:"09:00", emoji:"🏊", name:"Tự do tại Villa",               desc:"Ăn sáng, bơi hồ bơi, nghỉ ngơi, tận hưởng không gian đảo lần cuối. Không check-out sớm.", tag:"rest", highlight:false },
-        { time:"11:30", emoji:"🧳", name:"Check-out",                     desc:"Trả phòng, sắp xếp hành lý, di chuyển vào trung tâm Hải Phòng (~30 phút).", tag:"travel", highlight:false },
-        { time:"12:00", emoji:"🦐", name:"Bắt đầu Food tour - Bánh đa bề bề, nem cua bể",   desc:"Bánh đa cua Bà Cụ  - Ngõ 179 Cầu Đất, Ngô Quyền là một trong những quán bánh đa cua đầu tiên ở Hải Phòng, tồn tại hơn 50 năm qua. Không chỉ thu hút người dân địa phương, quán còn là điểm đến yêu thích của những tín đồ du lịch đam mê ẩm thực. Tại đây còn có món nem cua bể được gói vuông, rán giòn rụm. Lớp vỏ đẫm nhân thịt cua tươi, ăn kèm dưa góp và nước chấm chua ngọt.", tag:"food", highlight:true },
-        { time:"13:00", emoji:"🛍️", name:"Bánh mỳ cay Ông Già/ông Cuông",  desc:"Bánh mì cay Ông Già - 181 Hàng Kênh là thương hiệu có tuổi đời hơn 40 năm. Pate tại đây có tỉ lệ mỡ và gan hoàn hảo, cực kỳ béo ngậy, thơm mềm. Hoặc đối diện với quán ông Già là bánh mỳ cay Ông Cuông (184 Hàng Kênh) nổi tiếng với phần cốt bánh mì giòn xốp và lớp nhân pate mịn màng, đậm vị.", tag:"activity", highlight:false },
-         { time:"13:30", emoji:"🛍️", name:"Dừa dầm trứ danh",  desc:"Dừa dầm Cô Hạnh (130 Lam Sơn) nổi tiếng với món dừa dầm đẫm topping dừa non, thạch rau câu và cà phê cốt dừa đá tuyết béo ngậy.", tag:"activity", highlight:true },
-        { time:"14:00", emoji:"🚌", name:"Lên đường về Bắc Kạn",          desc:"~270km, dự kiến về Bắc Kạn lúc 20h. Tạm biệt Hải Phòng – hẹn gặp lại! 👋", tag:"travel", highlight:true },
+        { time:"09:00", emoji:"🏊", name:"Tự do tại Villa", desc:"Ăn sáng, bơi hồ bơi, nghỉ ngơi, tận hưởng không gian đảo lần cuối. Không check-out sớm.", tag:"rest", highlight:false },
+        { time:"11:30", emoji:"🧳", name:"Check-out", desc:"Trả phòng, sắp xếp hành lý, di chuyển vào trung tâm Hải Phòng (~30 phút).", tag:"travel", highlight:false },
+        { time:"12:00", emoji:"🦐", name:"Bắt đầu Food tour - Bánh đa bề bề, nem cua bể", desc:"Bánh đa cua Bà Cụ  - Ngõ 179 Cầu Đất, Ngô Quyền là một trong những quán bánh đa cua đầu tiên ở Hải Phòng, tồn tại hơn 50 năm qua. Không chỉ thu hút người dân địa phương, quán còn là điểm đến yêu thích của những tín đồ du lịch đam mê ẩm thực. Tại đây còn có món nem cua bể được gói vuông, rán giòn rụm. Lớp vỏ đẫm nhân thịt cua tươi, ăn kèm dưa góp và nước chấm chua ngọt.", tag:"food", highlight:true,
+          mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.4!2d106.67200000000001!3d20.8655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7a8db76ae681%3A0x413a7596f4d9951e!2zQsOhbmggxJBhIEN1YSBCw6AgQ-G7pSAtIE5n00xIDE3OSBD4bqndSDEkOG6pXQ!5e0!3m2!1svi!2svn!4v1719500009000" },
+        { time:"13:00", emoji:"🛍️", name:"Bánh mỳ cay Ông Già/ông Cuông", desc:"Bánh mì cay Ông Già - 181 Hàng Kênh là thương hiệu có tuổi đời hơn 40 năm. Pate tại đây có tỉ lệ mỡ và gan hoàn hảo, cực kỳ béo ngậy, thơm mềm. Hoặc đối diện với quán ông Già là bánh mỳ cay Ông Cuông (184 Hàng Kênh) nổi tiếng với phần cốt bánh mì giòn xốp và lớp nhân pate mịn màng, đậm vị.", tag:"activity", highlight:false,
+          mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.3!2d106.68100000000001!3d20.8660!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7b4c2e1a3b5d%3A0x7f8e9d0c1b2a3456!2zQsOhbmggbcOsIGNheSBPw7RuZyBHacOgIC0gMTgxIEjDoG5nIEvDqm5o!5e0!3m2!1svi!2svn!4v1719500010000" },
+        { time:"13:30", emoji:"🛍️", name:"Dừa dầm trứ danh", desc:"Dừa dầm Cô Hạnh (130 Lam Sơn) nổi tiếng với món dừa dầm đẫm topping dừa non, thạch rau câu và cà phê cốt dừa đá tuyết béo ngậy.", tag:"activity", highlight:true,
+          mapUrl:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.2!2d106.67900000000001!3d20.8665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a7b4d1f2e3c4b%3A0x5a6b7c8d9e0f1a2b!2zRPG7q2EgZOG6p20gQ8O0IEjhuqFuaCAtIDEzMCBMYW0gU8ahbg!5e0!3m2!1svi!2svn!4v1719500011000" },
+        { time:"14:00", emoji:"🚌", name:"Lên đường về Bắc Kạn", desc:"~270km, dự kiến về Bắc Kạn lúc 20h. Tạm biệt Hải Phòng – hẹn gặp lại! 👋", tag:"travel", highlight:true },
       ],
     },
   ],
@@ -311,6 +321,17 @@ body{font-family:'Montserrat',sans-serif;background:var(--white);color:var(--tex
 .footer-script{font-family:'Dancing Script',cursive;font-size:1.75rem;color:var(--gold);display:block;margin-bottom:.4rem}
 .footer-body{font-size:.7rem;color:rgba(255,255,255,.28);letter-spacing:.06em}
 
+/* MAP INLINE */
+.tl-map{margin-top:.7rem;border-radius:3px;overflow:hidden;border:1px solid var(--line)}
+.tl-map-header{display:flex;align-items:center;justify-content:space-between;padding:.45rem .75rem;cursor:pointer;background:var(--gold-pale);border-bottom:1px solid var(--line);user-select:none}
+.tl-map-label{font-size:.65rem;font-weight:600;color:var(--navy);letter-spacing:.04em}
+.tl-map-arrow{font-size:.65rem;color:var(--gold);transition:transform .2s}
+.tl-map.open .tl-map-arrow{transform:rotate(180deg)}
+.tl-map-body{display:none}
+.tl-map.open .tl-map-body{display:block}
+.tl-map-body iframe{width:100%;height:200px;border:none;display:block}
+.tl-map-link{display:block;text-align:center;font-size:.62rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);padding:.42rem;text-decoration:none;background:#f5edda;border-top:1px solid var(--line)}
+
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .5s ease,transform .5s ease}
 .reveal.on{opacity:1;transform:none}
@@ -333,15 +354,29 @@ function build(){
 
   /* DAYS */
   const daysHtml=days.map(d=>{
-    const items=d.items.map(it=>`
+    const items=d.items.map((it,ii)=>{
+      const mapHtml = it.mapUrl ? `
+        <div class="tl-map" id="m-${d.id}-${ii}">
+          <div class="tl-map-header" onclick="toggleMap('m-${d.id}-${ii}')">
+            <span class="tl-map-label">📍 Xem bản đồ</span>
+            <span class="tl-map-arrow">▼</span>
+          </div>
+          <div class="tl-map-body">
+            <iframe src="${it.mapUrl}" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <a class="tl-map-link" href="${it.mapUrl.replace('maps/embed?pb=','maps?q=').replace('/embed?pb=','/?pb=')}" target="_blank" rel="noopener">Mở Google Maps ↗</a>
+          </div>
+        </div>` : '';
+      return`
       <div class="tl-item ${it.highlight?'hi':''} reveal">
         <div class="tl-time">${it.time}</div>
         <div class="tl-card">
           <div class="tl-head"><span class="tl-emoji">${it.emoji}</span><span class="tl-name">${it.name}</span></div>
           <div class="tl-desc">${it.desc}</div>
           <span class="tl-tag tag-${it.tag}">${TAG[it.tag]||it.tag}</span>
+          ${mapHtml}
         </div>
-      </div>`).join('');
+      </div>`;
+    }).join('');
     return`
       <div id="${d.id}" class="day-block">
         <div class="pg">
@@ -473,6 +508,11 @@ function build(){
     });
   },{threshold:.2});
   ids.forEach(id=>{const el=document.getElementById(id);if(el)nio.observe(el);});
+}
+
+function toggleMap(id) {
+  const el = document.getElementById(id);
+  if (el) el.classList.toggle('open');
 }
 
 build();
